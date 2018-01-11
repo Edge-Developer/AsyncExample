@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_marginLeft="16dp"
+    android:layout_marginRight="16dp"
+    android:gravity="center"
+    android:orientation="vertical">
+
+    <!--A button to execute our Async Task-->
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Start Computation"
+        android:onClick="startComputation"
+        android:layout_marginBottom="16dp"
+        android:id="@+id/start_button"/>
+
+    <!--This TextView Will Show Progress of Calculation-->
+    <TextView
+        android:id="@+id/progress_text_view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:padding="16dp"
+        android:layout_marginBottom="8dp"
+        android:background="@android:color/holo_orange_light"
+        android:textColor="@android:color/holo_red_dark"
+        android:textSize="22sp"
+        tools:text="22 %"
+        android:textStyle="bold"/>
+
+    <!--This TextView Will Show Final Result-->
+    <TextView
+        android:id="@+id/result_text_view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="16dp"
+        android:background="@color/colorAccent"
+        android:textColor="@android:color/white"
+        android:textSize="22sp"
+        android:text="Result would be displayed Here"/>
+
+    <!--Button to help us cancel -->
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Cancel Computation"
+        android:layout_marginTop="16dp"
+        android:onClick="cancelComputation"
+        android:id="@+id/cancel_button"/>
+</LinearLayout>
